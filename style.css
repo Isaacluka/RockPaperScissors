@@ -1,0 +1,119 @@
+* {
+    margin:0;
+    padding:0;
+    box-sizing: border-box;
+    text-decoration: none;
+    border: none;
+    outline: none;
+    scroll-behavior: smooth;
+    font-family: 'Tektur' /*'Poppins', sans-serif*/;
+}
+:root{
+    --bg-color: #1c7b73;
+    --text-color: #1a2529;
+}
+html{
+    font-size: 162.5%;
+    overflow-x: hidden;
+
+}
+body {
+    background: var(--bg-color);
+    color: #496a97;    
+}
+header{
+    position: relative;
+    top: 50;
+    left: 0;
+    width: 100%;
+    padding: .2rem 9%;
+    background: var(--bg-color);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #1dcd8d;
+}
+.animated {
+    overflow: hidden;
+    width: 100%;
+    white-space: nowrap;
+    
+  }
+  .animated > * {
+    display: inline-block;
+    position: relative;
+    animation: 3s linear 0s infinite alternate move;
+  }
+  @keyframes move {
+    0%,
+    25% {
+      transform: translateX(100%);
+      left: -30%;
+    }
+    50%,
+    100% {
+      transform: translateX(-100%);
+      left: 30%;
+    }
+  }
+  .emoji{
+    /*border: .01rem solid gold;*/
+    padding: .5rem;
+    margin: .5rem;
+    font-size: 10rem;
+  }
+  .game{
+    border: .2rem solid gold;
+  }
+  .text{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
+    padding: 2rem;
+    background: #cdefe1;
+    border: .2rem solid #1c7b73;
+    border-radius: 2rem;
+  }
+  .gameScreen{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    padding: .2rem;
+    min-width: 845px;
+    text-align: center;
+    border: .02rem solid #1a2529;
+  }
+  .gameScreen div{
+    padding: .2rem;
+    margin: .2rem;
+    /*border: .2rem solid black;*/
+  }
+  button{
+    background: #1a2529;
+    padding: .5rem 1rem;
+    border-radius: 2rem;
+    font-size: .8rem;
+    color: white;
+    transition: all 2s ease;
+  }
+  button:active{
+    transform: scale(0, 0.6);
+  }
+  #sect4{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border: .2rem solid black;
+    gap: 2rem;
+  }
+  .results{
+    border: .1rem solid red;
+    padding: 2rem;
+    margin: 2rem;
+  }
+  .footer{
+    color: #1a2529;
+    text-align: center;;
+  }
